@@ -1,0 +1,5 @@
+#lang racket
+(define (factorial n)
+  (if (zero? n) 1
+      (* n (factorial (sub1 n)))))
+(factorial 5) ; => 120
